@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: #1f2937;
+    border-bottom: 2px solid #374151;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9ca3af;
+    font-size: 17px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.upload-box {
+    text-align: center;
+    background: #1f2937;
+    border: 2px dashed #4b5563;
+    border-radius: 15px;
+    padding: 50px 20px;
+}
+
+.upload-box h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+#packInput {
+    display: none;
+}
+
+.upload-button {
+    display: inline-block;
+    background: #22c55e;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.upload-button:hover {
+    background: #16a34a;
+    transform: scale(1.03);
+}
+
+#viewer {
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+#viewer h2 {
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tabs button {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background: #4b5563;
+}
+
+.texture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.texture {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.texture img {
+    width: 80px;
+    height: 80px;
+    image-rendering: pixelated;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.texture-name {
+    font-size: 13px;
+    color: #d1d5db;
+    word-break: break-word;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #6b7280;
+    margin-top: 40px;
+}
