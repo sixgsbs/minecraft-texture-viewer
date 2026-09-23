@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Texture Pack Viewer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>⛏️ Minecraft Texture Pack Viewer</h1>
+        <p>See your texture pack without opening Minecraft!</p>
+    </header>
+
+    <main>
+
+        <div class="upload-box">
+            <h2>📦 Upload your texture pack</h2>
+
+            <p>Select a Minecraft texture pack (.zip)</p>
+
+            <input type="file" id="packInput" accept=".zip">
+
+            <label for="packInput" class="upload-button">
+                Choose Texture Pack
+            </label>
+
+            <p id="fileName"></p>
+        </div>
+
+        <section id="viewer" class="hidden">
+
+            <h2>🎨 Texture Pack</h2>
+
+            <div class="tabs">
+                <button>Blocks</button>
+                <button>Items</button>
+                <button>GUI</button>
+                <button>Mobs</button>
+            </div>
+
+            <div id="textures" class="texture-grid">
+                <!-- Textures will appear here -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Minecraft Texture Pack Viewer
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
